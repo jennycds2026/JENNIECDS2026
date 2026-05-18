@@ -1,331 +1,107 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
+<html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>傑倪引流行銷｜成交型設計與引流系統</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>傑倪引流行銷｜44頁投資人營運計劃書</title>
   <style>
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:"Noto Sans TC","Microsoft JhengHei",Arial,sans-serif;
-      background:#090806;
-      color:#f6efe3;
-      line-height:1.75;
-    }
-    a{text-decoration:none;color:inherit}
-    .wrap{width:min(1120px,88%);margin:auto}
-    .nav{
-      position:sticky;
-      top:0;
-      z-index:99;
-      background:rgba(9,8,6,.9);
-      backdrop-filter:blur(14px);
-      border-bottom:1px solid rgba(215,183,102,.22);
-    }
-    .nav-inner{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      padding:16px 0;
-    }
-    .logo{
-      color:#d7b766;
-      font-weight:900;
-      letter-spacing:.08em;
-    }
-    .nav-links a{
-      margin-left:20px;
-      font-size:14px;
-      color:#e0d5c2;
-    }
-    .hero{
-      min-height:88vh;
-      display:grid;
-      align-items:center;
-      background:
-        radial-gradient(circle at 80% 15%,rgba(215,183,102,.24),transparent 32%),
-        linear-gradient(135deg,#090806,#18120a 70%,#090806);
-    }
-    .hero-content{padding:80px 0}
-    .tag{
-      display:inline-block;
-      padding:7px 13px;
-      border-radius:999px;
-      border:1px solid rgba(215,183,102,.28);
-      color:#f1d47a;
-      font-size:13px;
-      letter-spacing:.16em;
-      font-weight:800;
-    }
-    h1{
-      margin:22px 0;
-      font-size:clamp(42px,7vw,82px);
-      line-height:1.08;
-      letter-spacing:-.05em;
-    }
-    .gold{color:#d7b766}
-    .lead{
-      max-width:760px;
-      color:#c8bcaa;
-      font-size:20px;
-    }
-    .actions{
-      display:flex;
-      flex-wrap:wrap;
-      gap:14px;
-      margin-top:34px;
-    }
-    .btn{
-      display:inline-flex;
-      padding:15px 25px;
-      border-radius:999px;
-      font-weight:900;
-      transition:.25s;
-    }
-    .btn:hover{transform:translateY(-2px)}
-    .btn-line{
-      background:#06c755;
-      color:white;
-      box-shadow:0 16px 40px rgba(6,199,85,.25);
-    }
-    .btn-secondary{
-      border:1px solid rgba(215,183,102,.5);
-      color:#f7e8bb;
-    }
-    section{padding:86px 0}
-    .dark{background:#0f0e0c}
-    .title{
-      font-size:clamp(30px,4vw,54px);
-      line-height:1.15;
-      margin:0 0 16px;
-    }
-    .sub{
-      max-width:760px;
-      color:#c8bcaa;
-      font-size:18px;
-      margin-bottom:38px;
-    }
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:18px;
-    }
-    .card{
-      padding:30px;
-      border-radius:28px;
-      background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.025));
-      border:1px solid rgba(215,183,102,.2);
-      box-shadow:0 22px 70px rgba(0,0,0,.28);
-    }
-    .card h3{
-      margin-top:0;
-      color:#f1d47a;
-    }
-    .card p,.card li{color:#cdc2b0}
-    .works-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:18px;
-    }
-    .work{
-      overflow:hidden;
-      border-radius:24px;
-      border:1px solid rgba(215,183,102,.22);
-      background:#15120d;
-      box-shadow:0 20px 60px rgba(0,0,0,.3);
-    }
-    .work img{
-      width:100%;
-      height:300px;
-      object-fit:cover;
-      display:block;
-      transition:.35s;
-    }
-    .work:hover img{transform:scale(1.05)}
-    .work p{
-      margin:0;
-      padding:14px 16px;
-      color:#e7d8b5;
-      font-weight:700;
-    }
-    .price{
-      font-size:34px;
-      font-weight:900;
-      color:white;
-      margin:10px 0;
-    }
-    .cta{
-      text-align:center;
-      background:
-        radial-gradient(circle at 50% 0%,rgba(215,183,102,.24),transparent 38%),
-        #090806;
-    }
-    .cta .sub{margin-left:auto;margin-right:auto}
-    .float-line{
-      position:fixed;
-      right:18px;
-      bottom:18px;
-      z-index:100;
-      background:#06c755;
-      color:white;
-      padding:14px 18px;
-      border-radius:999px;
-      font-weight:900;
-      box-shadow:0 18px 48px rgba(0,0,0,.35);
-    }
-    footer{
-      padding:34px 0;
-      border-top:1px solid rgba(215,183,102,.2);
-      color:#918674;
-      font-size:14px;
-    }
-    @media(max-width:900px){
-      .nav-links{display:none}
-      .grid,.works-grid{grid-template-columns:1fr}
-      .work img{height:auto}
-    }
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Noto Sans TC","Microsoft JhengHei",Arial,sans-serif;background:#070707;color:#f8f0df;line-height:1.75}.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(7,7,7,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(218,183,107,.22);padding:12px 6%;display:flex;justify-content:space-between;align-items:center}.brand{font-weight:900;color:#e1bd72;letter-spacing:2px}.nav a{color:#f8f0df;text-decoration:none;margin-left:18px;font-size:14px}.page{min-height:100vh;padding:110px 8% 80px;border-bottom:1px solid rgba(218,183,107,.18);display:flex;align-items:center;background:radial-gradient(circle at 88% 14%,rgba(218,183,107,.14),transparent 30%),linear-gradient(135deg,#070707,#151515 58%,#22190e)}.wrap{width:100%;max-width:1180px;margin:0 auto}.kicker{color:#e1bd72;letter-spacing:4px;font-size:13px;font-weight:900;text-transform:uppercase}.page-no{display:inline-block;margin-bottom:16px;padding:7px 14px;border:1px solid rgba(218,183,107,.45);border-radius:999px;color:#e1bd72;font-size:13px}h1{font-size:clamp(42px,7vw,88px);line-height:1.06;margin:16px 0 22px}h2{font-size:clamp(30px,4.4vw,56px);line-height:1.18;margin:10px 0 24px}h3{font-size:24px;color:#e1bd72;margin:0 0 10px}p,li{font-size:18px;color:#dfd4c2}.lead{font-size:23px;max-width:980px;color:#f3e7d3}.gold{color:#e1bd72}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:28px}.card{background:rgba(255,255,255,.055);border:1px solid rgba(218,183,107,.25);border-radius:24px;padding:26px;box-shadow:0 18px 60px rgba(0,0,0,.28)}.big{font-size:clamp(36px,6vw,72px);font-weight:900;line-height:1.08}.num{font-size:44px;font-weight:900;color:#e1bd72}table{width:100%;border-collapse:collapse;border-radius:18px;overflow:hidden;margin-top:24px}th,td{padding:14px 16px;border-bottom:1px solid rgba(255,255,255,.1);text-align:left;font-size:16px;vertical-align:top}th{background:rgba(218,183,107,.23);color:#ffe5a5}td{background:rgba(255,255,255,.045);color:#eee3d0}.pill{display:inline-block;border:1px solid rgba(218,183,107,.52);border-radius:999px;padding:7px 13px;color:#f2d38c;margin:4px;font-size:14px}.quote{font-size:clamp(32px,5vw,64px);font-weight:900;line-height:1.25}.toc-list{columns:2;column-gap:50px}.toc-list a{display:block;color:#f0cc82;text-decoration:none;padding:7px 0;border-bottom:1px solid rgba(218,183,107,.18);break-inside:avoid}.small{font-size:15px;color:#bfb3a1}.note{border-left:4px solid #e1bd72;padding-left:18px;color:#f5e7c9}.cta{display:inline-block;background:#e1bd72;color:#101010;border-radius:999px;padding:14px 24px;font-weight:900;text-decoration:none;margin-top:20px}@media(max-width:900px){.grid,.grid2{grid-template-columns:1fr}.toc-list{columns:1}.page{padding:96px 6% 64px}.nav a{display:none}}
   </style>
 </head>
-
 <body>
-  <a class="float-line" href="https://line.me/R/ti/p/@509gguza" target="_blank">LINE 諮詢</a>
+<nav class="nav"><div class="brand">JENNY INVESTOR PLAN</div><div><a href="#toc">目錄</a><a href="#p22">資金運用</a><a href="#p36">餐飲方案</a><a href="#p42">結語</a></div></nav>
 
-  <nav class="nav">
-    <div class="wrap nav-inner">
-      <div class="logo">傑倪引流行銷</div>
-      <div class="nav-links">
-        <a href="#services">服務</a>
-        <a href="#works">作品</a>
-        <a href="#pricing">方案</a>
-        <a href="#contact">諮詢</a>
-      </div>
-    </div>
-  </nav>
+<section class="page" id="p01"><div class="wrap"><span class="page-no">PAGE 01 / 44</span><div class="kicker">COVER</div><h1>傑倪引流行銷<br><span class="gold">投資人營運計劃書</span></h1><p class="lead">JENNY Conversion Marketing Co., Ltd.｜成交式引流 × 餐飲流量場景 × 品牌變現系統</p><div class="quote">我們不是做行銷，<br><span class="gold">我們是把流量變成現金流。</span></div><p class="small">募資需求：NT$500,000｜版本：Investor Business Plan V1</p></div></section>
 
-  <header class="hero">
-    <div class="wrap hero-content">
-      <span class="tag">CONVERSION DESIGN & TRAFFIC SYSTEM</span>
-      <h1>不是只做設計，<br><span class="gold">是幫你把流量變成詢問。</span></h1>
-      <p class="lead">
-        傑倪引流行銷專做成交型設計、品牌視覺、社群引流與 LINE 成交流程。
-        我們讓品牌不只是好看，而是更容易被信任、被詢問、被選擇。
-      </p>
-      <div class="actions">
-        <a class="btn btn-line" href="https://line.me/R/ti/p/@509gguza" target="_blank">LINE 免費諮詢</a>
-        <a class="btn btn-secondary" href="https://www.instagram.com/jennycds/" target="_blank">查看 IG 作品</a>
-      </div>
-    </div>
-  </header>
+<section class="page" id="toc"><div class="wrap"><span class="page-no">TABLE OF CONTENTS</span><h2>目錄｜42頁投資人提案架構</h2><div class="toc-list">
+<a href="#p01">01 封面</a><a href="#p02">02 執行摘要</a><a href="#p03">03 市場痛點</a><a href="#p04">04 市場機會</a><a href="#p05">05 為什麼是傑倪引流</a><a href="#p06">06 商業模式</a><a href="#p07">07 核心營運項目</a><a href="#p08">08 初期主打餐飲市場</a><a href="#p09">09 餐飲流量場景行銷</a><a href="#p10">10 四級訂閱方案</a><a href="#p11">11 獲利模型</a><a href="#p12">12 產品代銷與分潤</a><a href="#p13">13 客戶開發方式</a><a href="#p14">14 免費流量健檢成交模型</a><a href="#p15">15 公司流量計劃</a><a href="#p16">16 公司頻道成立計劃</a><a href="#p17">17 90天流量藍圖</a><a href="#p18">18 續約與升級機制</a><a href="#p19">19 團隊組織</a><a href="#p20">20 下游合作模式</a><a href="#p21">21 營運SOP</a><a href="#p22">22 50萬資金運用</a><a href="#p23">23 財務規劃</a><a href="#p24">24 團隊分潤制度</a><a href="#p25">25 業務分潤抽成與薪資結構</a><a href="#p26">26 年度分紅與公司留存制度</a><a href="#p27">27 擴張策略</a><a href="#p28">28 品牌護城河</a><a href="#p29">29 投資價值與估值</a><a href="#p30">30 風險與應對</a><a href="#p31">31 未來藍圖</a><a href="#p32">32 最終成交頁</a><a href="#p33">33 餐飲市場開發策略</a><a href="#p34">34 餐飲客戶取得方式</a><a href="#p35">35 餐飲成交流程</a><a href="#p36">36 餐飲90天開發計劃</a><a href="#p37">37 餐飲開發KPI</a><a href="#p38">38 訂閱制商業模式</a><a href="#p39">39 成本模型</a><a href="#p40">40 方案設計原則</a><a href="#p41">41 Starter Viral</a><a href="#p42">42 Growth Buzz</a><a href="#p43">43 Viral Engine / Flagship</a><a href="#p44">44 營收模型與銷售話術</a>
+</div></div></section>
 
-  <section class="dark">
-    <div class="wrap">
-      <h2 class="title">很多品牌不是不好，<br>是看起來不夠值得被選擇。</h2>
-      <p class="sub">
-        客戶滑過你的貼文、看過你的廣告，卻沒有詢問，通常不是產品差，而是沒有把價值說清楚。
-      </p>
-      <div class="grid">
-        <div class="card">
-          <h3>專業感</h3>
-          <p>讓品牌第一眼就有質感，看起來更穩、更值得信任。</p>
-        </div>
-        <div class="card">
-          <h3>信任感</h3>
-          <p>透過畫面、文案與案例，讓客戶降低懷疑。</p>
-        </div>
-        <div class="card">
-          <h3>成交率</h3>
-          <p>每一張圖、每一個按鈕，都設計成讓客戶願意往下一步走。</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="page" id="p02"><div class="wrap"><span class="page-no">PAGE 02 / 44</span><div class="kicker">EXECUTIVE SUMMARY</div><h2>一間幫中小企業把流量變成成交的公司</h2><p>傑倪引流行銷的核心不是提供單一美編、單一廣告投放或單次網紅媒合，而是建立一套完整的「成交式引流系統」。我們協助中小企業從曝光、內容、信任、私訊、到最終成交，形成可被追蹤、可被優化、可被複製的成長模型。</p><p>初期以餐飲市場作為切入點，原因是餐飲業痛點明確、成果容易被看見、案例擴散快，且適合透過實體互動輸出、社群內容與固定網紅探店形成話題。</p><div class="grid"><div class="card"><h3>募資金額</h3><p class="num">NT$500,000</p><p>用於建立最小可獲利模型。</p></div><div class="card"><h3>營收模式</h3><p>訂閱制、分潤制、顧問制三軸並行。</p></div><div class="card"><h3>初期目標</h3><p>90天建立第一批案例，12個月形成穩定月收入。</p></div></div></div></section>
 
-  <section id="services">
-    <div class="wrap">
-      <h2 class="title">我們提供的服務</h2>
-      <p class="sub">從品牌視覺、社群內容，到 LINE 諮詢入口，幫你整理成一套接單流程。</p>
-      <div class="grid">
-        <div class="card">
-          <h3>成交型設計</h3>
-          <p>Logo、品牌識別、IG廣告圖、銷售頁、報價頁設計。</p>
-        </div>
-        <div class="card">
-          <h3>社群引流</h3>
-          <p>短影音封面、貼文設計、廣告素材、30天內容方向。</p>
-        </div>
-        <div class="card">
-          <h3>LINE 成交流程</h3>
-          <p>LINE導流、自動回覆、私訊話術、諮詢到報價流程。</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="page" id="p03"><div class="wrap"><span class="page-no">PAGE 03 / 44</span><div class="kicker">MARKET PAIN</div><h2>市場真正缺的不是曝光，而是成交能力</h2><p>中小企業經常投入預算做設計、發文、投廣告或找網紅，卻沒有形成完整成交流程。曝光不是終點，真正影響營收的是：客戶是否理解價值、是否建立信任、是否被引導到行動。</p><div class="grid"><div class="card"><h3>廣告花錢沒效果</h3><p>有觸及、有點擊，但沒有私訊、預約或下單。原因通常不是廣告本身，而是素材、頁面、私訊與成交話術沒有串起來。</p></div><div class="card"><h3>視覺好看但不會賣</h3><p>很多品牌做了漂亮設計，但缺乏價值感、信任感與行動引導，因此無法把注意力轉換成購買。</p></div><div class="card"><h3>店家缺少穩定客源</h3><p>尤其餐飲業常遇到平日空檔、社群無話題、客人不分享、活動做完就沒聲量的問題。</p></div></div></div></section>
 
-  <section id="works" class="dark">
-    <div class="wrap">
-      <h2 class="title">作品展示</h2>
-      <p class="sub">以下為品牌視覺、社群廣告、包裝、海報與菜單等設計作品。</p>
+<section class="page" id="p04"><div class="wrap"><span class="page-no">PAGE 04 / 44</span><div class="kicker">OPPORTUNITY</div><h2>餐飲是最快驗證成果的市場</h2><p>餐飲業具備高頻消費、視覺化強、社群分享意願高的特性。只要能設計出讓客人願意拍、願意發、願意標記的場景，就有機會把店面本身變成流量入口。</p><div class="grid2"><div class="card"><h3>成果可量化</h3><p>可追蹤來客數、打卡數、標記數、Reels曝光、Threads聲量、訂位率與回購率。</p></div><div class="card"><h3>案例可擴散</h3><p>一旦某店成功，鄰近餐飲店、同類型品牌會更容易被說服，形成區域型開發優勢。</p></div></div><p class="note">市場缺口：多數公司只做代操或投放，傑倪主打「實體場景 × 社群擴散 × 成交導流」。</p></div></section>
 
-      <div class="works-grid">
-        <div class="work"><img src="wook1.jpg" alt="作品1"><p>品牌視覺設計</p></div>
-        <div class="work"><img src="wook2.jpg" alt="作品2"><p>社群貼文設計</p></div>
-        <div class="work"><img src="wook3.jpg" alt="作品3"><p>LOGO 設計</p></div>
-        <div class="work"><img src="wook4.jpg" alt="作品4"><p>包裝設計</p></div>
-        <div class="work"><img src="wook5.jpg" alt="作品5"><p>海報設計</p></div>
-        <div class="work"><img src="wook6.jpg" alt="作品6"><p>菜單設計</p></div>
-        <div class="work"><img src="wook7.jpg" alt="作品7"><p>品牌整合設計</p></div>
-      </div>
+<section class="page" id="p05"><div class="wrap"><span class="page-no">PAGE 05 / 44</span><div class="kicker">WHY US</div><h2>為什麼是傑倪引流？</h2><p>傑倪引流的差異不是多做幾篇貼文，而是把行銷拆成「吸引、信任、互動、成交、回購」五個階段，並設計每個階段的內容與動作。</p><table><tr><th>傳統服務商</th><th>常見問題</th><th>傑倪引流做法</th></tr><tr><td>設計公司</td><td>重美感，弱成交</td><td>成交式設計，讓視覺服務商業目標</td></tr><tr><td>廣告公司</td><td>重投放，弱轉換</td><td>廣告導流到LINE與私訊成交流程</td></tr><tr><td>代操公司</td><td>重發文，弱結果</td><td>以KPI與續約成果為導向</td></tr><tr><td>網紅媒合</td><td>一次曝光，缺乏累積</td><td>固定探店＋社群內容＋場景設計</td></tr></table></div></section>
 
-      <div class="actions" style="justify-content:center">
-        <a class="btn btn-line" href="https://line.me/R/ti/p/@509gguza" target="_blank">
-          想做這種質感？點我諮詢
-        </a>
-      </div>
-    </div>
-  </section>
+<section class="page" id="p06"><div class="wrap"><span class="page-no">PAGE 06 / 44</span><div class="kicker">BUSINESS MODEL</div><h2>訂閱制 × 分潤制 × 顧問制</h2><p>傑倪引流以「固定月費」建立穩定現金流，以「分潤模式」參與客戶成長，以「顧問與設計專案」提升高單價收入。</p><div class="grid"><div class="card"><h3>訂閱制</h3><p>餐飲流量場景行銷、社群代操、網紅探店、短影音企劃與廣告代操。</p></div><div class="card"><h3>分潤制</h3><p>協助產品代銷，例如冷凍包、禮盒、地方品牌商品，抽成15%–40%。</p></div><div class="card"><h3>顧問制</h3><p>品牌策略、成交式設計、店面流量診斷、行銷顧問與培訓。</p></div></div></div></section>
 
-  <section id="pricing">
-    <div class="wrap">
-      <h2 class="title">服務方案</h2>
-      <p class="sub">實際報價依設計內容、數量與執行深度調整。</p>
-      <div class="grid">
-        <div class="card">
-          <h3>社群設計方案</h3>
-          <div class="price">NT$15,000 起</div>
-          <p>適合需要固定社群圖、廣告圖與基礎品牌感的店家。</p>
-        </div>
-        <div class="card">
-          <h3>成交放大方案</h3>
-          <div class="price">NT$30,000 起 / 月</div>
-          <p>適合想把 IG、FB、LINE 串成接單流程的品牌。</p>
-        </div>
-        <div class="card">
-          <h3>品牌整合方案</h3>
-          <div class="price">NT$60,000 起</div>
-          <p>適合要完整品牌升級、網站、銷售頁與成交流程的公司。</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="page" id="p07"><div class="wrap"><span class="page-no">PAGE 07 / 44</span><div class="kicker">CORE SERVICES</div><h2>六大營收引擎</h2><p><span class="pill">餐飲流量場景行銷</span><span class="pill">引流行銷</span><span class="pill">品牌行銷</span><span class="pill">廣告代操</span><span class="pill">短影音內容</span><span class="pill">產品代銷分潤</span></p><table><tr><th>服務項目</th><th>內容</th><th>商業價值</th></tr><tr><td>引流行銷</td><td>廣告、社群、LINE導流、漏斗設計</td><td>穩定取得潛在客戶</td></tr><tr><td>品牌行銷</td><td>LOGO、VI、包裝、品牌定位</td><td>提高信任與價值感</td></tr><tr><td>餐飲行銷</td><td>場景、探店、Threads、Reels</td><td>快速建立案例</td></tr><tr><td>代操服務</td><td>社群內容、廣告、成效報告</td><td>形成月費收入</td></tr><tr><td>產品代銷</td><td>商品推廣與成交分潤</td><td>創造第二現金流</td></tr></table></div></section>
 
-  <section id="contact" class="cta">
-    <div class="wrap">
-      <h2 class="title">你不缺努力，<br><span class="gold">你缺一個會成交的入口。</span></h2>
-      <p class="sub">
-        點下方 LINE，直接告訴我們你的產業、目前遇到的問題，我們幫你看怎麼調整。
-      </p>
-      <div class="actions" style="justify-content:center">
-        <a class="btn btn-line" href="https://line.me/R/ti/p/@509gguza" target="_blank">LINE 立即諮詢</a>
-        <a class="btn btn-secondary" href="https://www.instagram.com/jennycds/" target="_blank">查看 IG 作品</a>
-      </div>
-    </div>
-  </section>
+<section class="page" id="p08"><div class="wrap"><span class="page-no">PAGE 08 / 44</span><div class="kicker">RESTAURANT FIRST</div><h2>初期主打餐飲市場策略</h2><p>初期不做所有產業，而是先用餐飲市場建立可見案例。餐飲品牌適合視覺內容、短影音、網紅探店與打卡場景，成果也容易被投資人與客戶理解。</p><div class="grid"><div class="card"><h3>第一波客群</h3><p>咖啡廳、餐酒館、居酒屋、漢堡品牌、火鍋店、燒肉店、特色小店。</p></div><div class="card"><h3>第一波區域</h3><p>台南、台中優先建立案例，再往其他城市擴張。</p></div><div class="card"><h3>第一波打法</h3><p>免費健檢、低門檻Starter方案、快速建立成果截圖。</p></div></div></div></section>
 
-  <footer>
-    <div class="wrap">
-      © 2026 傑倪引流行銷｜成交型設計・品牌視覺・社群引流・LINE 成交流程
-    </div>
-  </footer>
+<section class="page" id="p09"><div class="wrap"><span class="page-no">PAGE 09 / 44</span><div class="kicker">SCENE MARKETING</div><h2>餐飲流量場景行銷</h2><p>餐飲流量場景行銷的核心，是讓店面不只是消費空間，而是變成內容產生器。客人進店後自然拍照、發限動、標記店家，搭配固定網紅探店與社群操作，讓店家每月都有新話題。</p><div class="grid"><div class="card"><h3>桌邊互動輸出</h3><p>設計餐桌卡、拍照提示、活動卡與可分享小物。</p></div><div class="card"><h3>店內打卡場景</h3><p>以小成本創造高分享率的拍攝點。</p></div><div class="card"><h3>固定網紅探店</h3><p>每月穩定產出第三方內容與社會證明。</p></div></div></div></section>
+
+<section class="page" id="p10"><div class="wrap"><span class="page-no">PAGE 10 / 44</span><div class="kicker">SUBSCRIPTION PLAN</div><h2>四級訂閱方案總覽</h2><p>方案設計採用「低門檻進場、用成果升級」邏輯，降低店家初次決策壓力，同時提高後續客戶終身價值。</p><table><tr><th>方案</th><th>價格</th><th>適合對象</th><th>策略目的</th></tr><tr><td>Starter Viral</td><td>NT$19,800/月</td><td>小型餐飲與試水溫客戶</td><td>快速成交與建立案例</td></tr><tr><td>Growth Buzz</td><td>NT$39,800/月</td><td>成長型店家</td><td>主力獲利與續約方案</td></tr><tr><td>Viral Engine</td><td>NT$79,800/月</td><td>想快速放大的品牌</td><td>高毛利與成效展示</td></tr><tr><td>Flagship</td><td>NT$150,000+/月</td><td>連鎖與多店品牌</td><td>高客單價客製服務</td></tr></table></div></section>
+
+<section class="page" id="p11"><div class="wrap"><span class="page-no">PAGE 11 / 44</span><div class="kicker">PROFIT MODEL</div><h2>獲利模型：一次成交，長期訂閱</h2><p>傑倪的營收不只來自單案，而是透過月費訂閱、服務升級、廣告代操加購、產品代銷分潤與顧問服務形成多層收入。</p><div class="grid"><div class="card"><h3>固定月費</h3><p>建立可預測收入，降低每月重開發壓力。</p></div><div class="card"><h3>服務升級</h3><p>Starter客戶可升級到Growth與Viral，提高LTV。</p></div><div class="card"><h3>分潤收入</h3><p>客戶流量起來後，協助商品變現並抽成。</p></div></div></div></section>
+
+<section class="page" id="p12"><div class="wrap"><span class="page-no">PAGE 12 / 44</span><div class="kicker">REVENUE SHARE</div><h2>產品代銷與分潤計畫</h2><p>當餐飲品牌擁有流量後，可進一步開發冷凍包、調理包、醬料、伴手禮或聯名商品。傑倪可協助商品頁、短影音、社群推廣與LINE成交，依銷售成果抽成。</p><table><tr><th>合作模式</th><th>說明</th><th>適合情境</th></tr><tr><td>純分潤</td><td>無月費，成交後抽成15%–40%</td><td>高毛利產品</td></tr><tr><td>月費＋分潤</td><td>收固定服務費，另依成交抽成</td><td>已有品牌與穩定商品</td></tr><tr><td>聯名商品</td><td>共同企劃商品並拆分利潤</td><td>具話題性的餐飲品牌</td></tr></table></div></section>
+
+<section class="page" id="p13"><div class="wrap"><span class="page-no">PAGE 13 / 44</span><div class="kicker">LEAD GENERATION</div><h2>客戶開發方式</h2><p>客戶開發不依賴單一人脈，而是建立可複製的線上與線下雙軌系統。</p><div class="grid"><div class="card"><h3>FB社團</h3><p>餐飲創業、店家經營、地方社團，以教學文與免費健檢吸引詢問。</p></div><div class="card"><h3>短影音自然流量</h3><p>發布店家行銷分析、海報改造、餐飲案例拆解，建立專業信任。</p></div><div class="card"><h3>地推拜訪</h3><p>針對餐飲密集區每日拜訪10–20家，快速取得市場回饋。</p></div></div></div></section>
+
+<section class="page" id="p14"><div class="wrap"><span class="page-no">PAGE 14 / 44</span><div class="kicker">SALES FUNNEL</div><h2>免費流量健檢成交模型</h2><p>多數店家不相信行銷公司，所以不能一開始就硬賣方案，而是先提供免費診斷，讓老闆看見問題，再提出解法。</p><table><tr><th>步驟</th><th>內容</th><th>目的</th></tr><tr><td>吸引</td><td>廣告、社群、地推導入免費健檢</td><td>降低進線門檻</td></tr><tr><td>診斷</td><td>分析IG、Google評論、店面、菜單、私訊流程</td><td>建立信任</td></tr><tr><td>拆解問題</td><td>指出沒有話題、沒有拍照點、沒有導流流程</td><td>讓客戶看見痛點</td></tr><tr><td>客製提案</td><td>推薦Starter/Growth/Viral</td><td>引導成交</td></tr><tr><td>三個月簽約</td><td>設定KPI與成效回報</td><td>建立長期合作</td></tr></table></div></section>
+
+<section class="page" id="p15"><div class="wrap"><span class="page-no">PAGE 15 / 44</span><div class="kicker">TRAFFIC SYSTEM</div><h2>公司流量計劃</h2><p>一間引流公司必須先證明自己有流量。傑倪將以全平台內容矩陣建立專業形象，讓潛在客戶每天看到傑倪的觀點與案例。</p><p><span class="pill">IG 成交案例</span><span class="pill">Threads 爆量觀點</span><span class="pill">YT Shorts 15秒分析</span><span class="pill">FB社團教育文</span><span class="pill">官網SEO</span></p><p class="note">公司內容主軸：你缺的不是客人，是穩定引流系統。</p></div></section>
+
+<section class="page" id="p16"><div class="wrap"><span class="page-no">PAGE 16 / 44</span><div class="kicker">MEDIA STRATEGY</div><h2>公司頻道成立計劃</h2><div class="grid"><div class="card"><h3>0–3個月｜建立信任</h3><p>IG每週5–7篇、Threads每日3–5篇、Shorts每週5–10支，建立初期存在感。</p></div><div class="card"><h3>3–6個月｜建立案例權威</h3><p>發布客戶訪談、成效案例、前後對比、餐飲改造過程。</p></div><div class="card"><h3>6–12個月｜建立品牌護城河</h3><p>成立傑倪流量學院，延伸顧問、培訓與線上課程。</p></div></div></div></section>
+
+<section class="page" id="p17"><div class="wrap"><span class="page-no">PAGE 17 / 44</span><div class="kicker">90-DAY GROWTH</div><h2>90天流量成長藍圖</h2><p>前90天不以最大利潤為唯一目標，而是快速建立案例、信任與可展示的成果。</p><table><tr><th>階段</th><th>目標</th><th>KPI</th></tr><tr><td>第1個月</td><td>建立品牌存在感</td><td>20–30組詢問</td></tr><tr><td>第2個月</td><td>建立3–5間案例</td><td>取得成果截圖與客戶回饋</td></tr><tr><td>第3個月</td><td>用案例放大成交</td><td>月簽約5–10客</td></tr></table></div></section>
+
+<section class="page" id="p18"><div class="wrap"><span class="page-no">PAGE 18 / 44</span><div class="kicker">RETENTION</div><h2>客戶續約與升級機制</h2><p>三個月起訂是為了讓成效有累積時間。每月透過成效報告呈現曝光、打卡、標記、來客與詢問變化，讓客戶看見進步。</p><div class="big gold">Starter → Growth → Viral → Flagship</div><p>季度升級獎勵：若第一季達成雙方設定KPI，第二季可用原方案價格升級一個檔位，第三季再恢復依實際方案報價。此機制能提高客戶配合度與合作週期。</p></div></section>
+
+<section class="page" id="p19"><div class="wrap"><span class="page-no">PAGE 19 / 44</span><div class="kicker">TEAM</div><h2>三人精實團隊</h2><p>初期採用精實團隊，降低固定成本，將預算集中在成交、案例與流量建立。</p><div class="grid"><div class="card"><h3>CEO／創辦人</h3><p>負責成交、策略、品牌方向、客戶關係與重大提案。</p></div><div class="card"><h3>流量業務</h3><p>負責社群經營、客戶開發、私訊成交與廣告執行。</p></div><div class="card"><h3>行銷企劃</h3><p>負責文案、腳本、提案、專案規劃與成果報告。</p></div></div></div></section>
+
+<section class="page" id="p20"><div class="wrap"><span class="page-no">PAGE 20 / 44</span><div class="kicker">SUPPLY CHAIN</div><h2>下游合作模式</h2><p>傑倪不一開始重資產聘請大量人力，而是採用平台整合模式。公司掌握策略、成交、品質控管與客戶關係；下游合作夥伴負責拍攝、剪輯、輸出、印刷與網紅執行。</p><table><tr><th>下游角色</th><th>合作方式</th><th>價值</th></tr><tr><td>攝影師</td><td>按案發包</td><td>降低固定薪資</td></tr><tr><td>剪輯師</td><td>依影片量計費</td><td>彈性擴張產能</td></tr><tr><td>KOL</td><td>建立分級名單</td><td>控制探店成本</td></tr><tr><td>印刷輸出商</td><td>固定合作價</td><td>提高毛利率</td></tr></table></div></section>
+
+<section class="page" id="p21"><div class="wrap"><span class="page-no">PAGE 21 / 44</span><div class="kicker">OPERATION SOP</div><h2>營運SOP與執行流程</h2><p>標準化流程讓服務品質穩定，也讓未來擴編更容易。</p><table><tr><th>流程</th><th>說明</th><th>產出</th></tr><tr><td>客戶進線</td><td>LINE官方帳號集中管理</td><td>客戶資料與需求紀錄</td></tr><tr><td>免費健檢</td><td>20–30分鐘診斷</td><td>簡易診斷建議</td></tr><tr><td>客製提案</td><td>搭配方案與ROI試算</td><td>提案書與報價</td></tr><tr><td>簽約執行</td><td>三個月起訂</td><td>服務排程</td></tr><tr><td>成效報告</td><td>每月檢討與優化</td><td>續約與升級依據</td></tr></table></div></section>
+
+<section class="page" id="p22"><div class="wrap"><span class="page-no">PAGE 22 / 44</span><div class="kicker">USE OF FUNDS</div><h2>50萬資金運用規劃</h2><p>本輪資金不投入高租金辦公室，而是集中於設備、團隊、廣告、品牌建設與業務開發，目標是在最短時間內建立可獲利模型。</p><table><tr><th>項目</th><th>金額</th><th>用途</th></tr><tr><td>設備器材</td><td>NT$100,000</td><td>Mac、拍攝器材、燈光、麥克風</td></tr><tr><td>團隊成本</td><td>NT$180,000</td><td>前2–3個月薪資與獎金</td></tr><tr><td>廣告預算</td><td>NT$120,000</td><td>FB/IG導流與免費健檢廣告</td></tr><tr><td>業務開發</td><td>NT$30,000</td><td>拜訪、交通、聚餐與地推</td></tr><tr><td>外包成本</td><td>NT$20,000</td><td>攝影、剪輯、輸出支援</td></tr><tr><td>品牌建設</td><td>NT$30,000</td><td>官網、提案模板、作品集</td></tr><tr><td>行政成本</td><td>NT$20,000</td><td>公司設立與行政雜支</td></tr><tr><td>預備金</td><td>NT$50,000</td><td>現金流與風險準備</td></tr></table></div></section>
+
+<section class="page" id="p23"><div class="wrap"><span class="page-no">PAGE 23 / 44</span><div class="kicker">FINANCE</div><h2>財務規劃與損益預估</h2><p>傑倪的方案屬於高知識服務、低庫存、輕資產模式，預估毛利率約50%–75%。</p><table><tr><th>情境</th><th>客戶組合</th><th>月營收</th><th>說明</th></tr><tr><td>保守模型</td><td>8家</td><td>NT$278,400</td><td>可支撐基本營運</td></tr><tr><td>正常模型</td><td>18家</td><td>NT$636,400</td><td>進入穩定獲利期</td></tr><tr><td>成長模型</td><td>30家</td><td>年營收1,200萬+</td><td>可擴編與跨區域發展</td></tr></table></div></section>
+
+<section class="page" id="p24"><div class="wrap"><span class="page-no">PAGE 24 / 44</span><div class="kicker">COMPENSATION</div><h2>團隊獎金與分潤制度</h2><p>為避免團隊只用打工心態參與，公司採用底薪＋成交獎金＋季度分紅。讓團隊與公司目標一致，將成交與續約變成共同責任。</p><table><tr><th>角色</th><th>制度</th><th>KPI</th></tr><tr><td>流量業務</td><td>底薪25,000＋成交獎金5%–10%</td><td>詢問數、簽約數、成交率</td></tr><tr><td>行銷企劃</td><td>底薪25,000＋續約獎金</td><td>成效達標、續約率、客戶滿意度</td></tr><tr><td>團隊分紅</td><td>季度獲利提撥5%–10%</td><td>共同成長與凝聚力</td></tr></table></div></section>
+
+<section class="page" id="p25"><div class="wrap"><span class="page-no">PAGE 25 / 44</span><div class="kicker">COMPENSATION STRUCTURE</div><h2>業務分潤抽成方式與薪資結構</h2><p>初期團隊採三人精實編制：總監一人、業務流量代操一人、行銷企劃一人。薪資制度設計以「基本穩定＋成交獎勵＋續約獎勵」為核心，避免團隊只領固定薪水而缺乏成長動力。</p><table><tr><th>職位</th><th>主要職責</th><th>建議底薪</th><th>獎金／抽成方式</th></tr><tr><td>總監／營運負責人</td><td>策略規劃、重大客戶成交、品質控管、團隊管理</td><td>NT$30,000</td><td>公司淨利分紅＋重大專案成交獎金</td></tr><tr><td colspan="4"><strong>初期薪資結構：</strong>總監 NT$30,000／月；業務流量代操 NT$25,000／月；行銷企劃 NT$25,000／月。以低固定成本＋高績效誘因方式運作，降低公司初期現金流壓力。</td></tr><tr><td>業務流量代操</td><td>客戶開發、私訊成交、FB/IG導流、LINE名單管理、基礎代操</td><td>NT$25,000</td><td>新客成交抽成5%–10%；續約抽成3%–5%</td></tr><tr><td>行銷企劃</td><td>提案、文案、短影音腳本、活動企劃、成效報告</td><td>NT$25,000</td><td>專案達標獎金；續約成功獎金3%–5%</td></tr></table><p class="note">制度重點：新客成交獎金鼓勵開發，續約獎金鼓勵服務品質，年度分紅則讓核心團隊與公司長期成長綁定。</p></div></section>
+
+<section class="page" id="p26"><div class="wrap"><span class="page-no">PAGE 26 / 44</span><div class="kicker">ANNUAL PROFIT SHARING</div><h2>年度分紅方式與公司留存比例</h2><p>年度分紅以「稅後淨利」為基礎，先保留公司成長資金，再進行團隊分紅，確保公司不是賺多少就分多少，而是保留足夠資金投入廣告、設備、人才與市場擴張。</p><table><tr><th>年度淨利分配項目</th><th>建議比例</th><th>用途說明</th></tr><tr><td>公司留存發展資金</td><td>60%</td><td>用於廣告投放、品牌建設、擴編、設備升級、現金流準備</td></tr><tr><td>團隊年度分紅池</td><td>20%</td><td>依個人KPI、成交貢獻、續約率與專案成果分配</td></tr><tr><td>創辦人／股東回報</td><td>15%</td><td>作為創辦人與投資人回報</td></tr><tr><td>教育訓練與激勵基金</td><td>5%</td><td>用於課程、工具、團隊旅遊、聚餐與內部訓練</td></tr></table><p>分紅條件建議：公司年度達成損益兩平並保留至少3個月營運週轉金後，才啟動年度分紅。若年度未達基本利潤目標，分紅池可保留至下一年度或改以績效獎金發放。</p><p class="note">投資人觀點：60%公司留存代表資金不會過早被分掉，能支撐公司持續投放、擴張與建立案例。</p></div></section>
+
+<section class="page" id="p27"><div class="wrap"><span class="page-no">PAGE 27 / 44</span><div class="kicker">EXPANSION</div><h2>擴張策略：從餐飲複製到全產業</h2><p>餐飲是第一個驗證市場，當流程、案例與團隊成熟後，可複製到美業、健身、零售、地方品牌與個人品牌。</p><div class="grid"><div class="card"><h3>第一階段</h3><p>餐飲市場，建立成功案例與區域名聲。</p></div><div class="card"><h3>第二階段</h3><p>美業與健身，高毛利且重視社群形象。</p></div><div class="card"><h3>第三階段</h3><p>零售與地方品牌，延伸產品代銷與分潤。</p></div></div></div></section>
+
+<section class="page" id="p28"><div class="wrap"><span class="page-no">PAGE 28 / 44</span><div class="kicker">COMPETITIVE ADVANTAGE</div><h2>品牌護城河與競爭優勢</h2><div class="grid"><div class="card"><h3>成交式設計</h3><p>不只追求美感，而是設計信任、價值感與決策動線。</p></div><div class="card"><h3>流量場景系統</h3><p>將實體互動輸出與社群擴散結合，降低對廣告的單一依賴。</p></div><div class="card"><h3>自有媒體能力</h3><p>公司本身建立頻道與內容影響力，長期降低獲客成本。</p></div></div></div></section>
+
+<section class="page" id="p29"><div class="wrap"><span class="page-no">PAGE 29 / 44</span><div class="kicker">VALUATION</div><h2>投資價值與估值邏輯</h2><p>投資價值不只看目前收入，而是看模式是否可複製、是否具備訂閱收入、是否能跨產業擴張。</p><table><tr><th>情境</th><th>年營收</th><th>估值邏輯</th></tr><tr><td>保守情境</td><td>約NT$763萬</td><td>年營收×2，估值約NT$1,500萬</td></tr><tr><td>成長情境</td><td>NT$1,200萬+</td><td>年營收×3，估值約NT$3,000萬+</td></tr><tr><td>高成長情境</td><td>顧問、學院、授權</td><td>具備NT$5,000萬以上潛力</td></tr></table></div></section>
+
+<section class="page" id="p30"><div class="wrap"><span class="page-no">PAGE 30 / 44</span><div class="kicker">RISK MANAGEMENT</div><h2>風險與應對策略</h2><table><tr><th>風險</th><th>可能影響</th><th>應對方式</th></tr><tr><td>客戶不續約</td><td>現金流不穩</td><td>KPI制度、成果報告、季度升級獎勵</td></tr><tr><td>廣告成本提高</td><td>獲客成本增加</td><td>增加Threads、Shorts與網紅自然流量</td></tr><tr><td>團隊流失</td><td>執行不穩</td><td>成交獎金與季度分紅</td></tr><tr><td>競爭者模仿</td><td>價格競爭</td><td>快速建立案例與品牌信任壁壘</td></tr><tr><td>現金流壓力</td><td>營運周轉困難</td><td>三個月起訂與預付款機制</td></tr></table></div></section>
+
+<section class="page" id="p31"><div class="wrap"><span class="page-no">PAGE 31 / 44</span><div class="kicker">VISION</div><h2>未來藍圖</h2><p>傑倪的目標不是停留在代操公司，而是成為「成交式引流」的代表品牌。第一年建立南部餐飲案例；第二至第三年拓展台中、台北；第三至第五年成立成交學院；五年後發展顧問、授權、加盟與工具化服務。</p></div></section>
+
+<section class="page" id="p32"><div class="wrap"><span class="page-no">PAGE 32 / 44</span><div class="kicker">CLOSING</div><div class="quote">很多品牌不是不好，<br><span class="gold">是看起來不值錢。</span></div><p class="lead">傑倪引流不是傳統行銷公司，而是幫企業真正成交的流量系統公司。</p></div></section>
+
+<section class="page" id="p33"><div class="wrap"><span class="page-no">PAGE 33 / 44</span><div class="kicker">RESTAURANT DEVELOPMENT</div><h2>餐飲市場開發策略</h2><p>初期開發餐飲市場時，不追求大量亂槍打鳥，而是精準找出「產品不差、店面有潛力、社群尚未成熟、願意嘗試行銷」的店家。這類客戶最容易透過場景設計與社群操作看到成果。</p><div class="grid"><div class="card"><h3>優先開發</h3><p>高客單、有特色、老闆願意配合拍攝與活動。</p></div><div class="card"><h3>暫不優先</h3><p>產品品質不穩、服務差、完全不願配合內容產出。</p></div><div class="card"><h3>案例策略</h3><p>先用低門檻方案建立3–5家可展示案例。</p></div></div></div></section>
+
+<section class="page" id="p34"><div class="wrap"><span class="page-no">PAGE 34 / 44</span><div class="kicker">CUSTOMER ACQUISITION</div><h2>餐飲客戶取得方式</h2><p>採線上與線下雙軌開發。線下用地推快速取得回饋，線上用內容與廣告持續導入免費健檢。</p><table><tr><th>方式</th><th>做法</th><th>目標</th></tr><tr><td>地推陌生開發</td><td>每日拜訪10–20家，提供免費診斷</td><td>快速接觸決策者</td></tr><tr><td>FB社團</td><td>發餐飲經營痛點文與案例文</td><td>累積詢問</td></tr><tr><td>IG/Threads</td><td>發布短觀點、案例、前後對比</td><td>建立專業形象</td></tr><tr><td>轉介紹</td><td>介紹成交可升級服務</td><td>降低獲客成本</td></tr></table></div></section>
+
+<section class="page" id="p35"><div class="wrap"><span class="page-no">PAGE 35 / 44</span><div class="kicker">SALES PROCESS</div><h2>餐飲成交流程</h2><p>成交不是靠硬推，而是讓老闆理解：現在沒有客人，不一定是產品問題，而是缺少話題、缺少拍攝點、缺少導流與成交設計。</p><ol><li>建立興趣：用案例與問題讓老闆願意聽。</li><li>免費健檢：分析店面、社群、菜單、評論與拍照點。</li><li>描繪未來：讓老闆看到店面變成流量場的畫面。</li><li>推薦方案：以Starter降低門檻。</li><li>建立成果：第一個月快速做出有感改變。</li><li>升級續約：用成果推進Growth或Viral。</li></ol></div></section>
+
+<section class="page" id="p36"><div class="wrap"><span class="page-no">PAGE 36 / 44</span><div class="kicker">90-DAY RESTAURANT PLAN</div><h2>餐飲90天開發計劃</h2><table><tr><th>月份</th><th>重點</th><th>KPI</th></tr><tr><td>第1月</td><td>市場調查、地推、免費健檢</td><td>接觸300家、30組健檢、2–3家簽約</td></tr><tr><td>第2月</td><td>建立案例與內容素材</td><td>5–8家客戶、至少3組可展示成果</td></tr><tr><td>第3月</td><td>用案例投放廣告並放大成交</td><td>10–15家客戶，月營收20–50萬</td></tr></table></div></section>
+
+<section class="page" id="p37"><div class="wrap"><span class="page-no">PAGE 37 / 44</span><div class="kicker">KPI</div><h2>餐飲開發KPI</h2><table><tr><th>週期</th><th>KPI</th><th>目的</th></tr><tr><td>每日</td><td>拜訪10–20家、私訊20位、Threads 3–5篇、短影音1支</td><td>保持穩定開發量</td></tr><tr><td>每週</td><td>免費健檢10組、提案5組、簽約1–3家</td><td>建立成交節奏</td></tr><tr><td>每月</td><td>簽約5–10家，月營收20–50萬</td><td>驗證商業模式</td></tr></table></div></section>
+
+<section class="page" id="p38"><div class="wrap"><span class="page-no">PAGE 38 / 44</span><div class="kicker">SUBSCRIPTION MODEL</div><h2>餐飲流量場景行銷｜訂閱制商業模式</h2><p>所有方案皆包含「實體互動輸出 + 社群內容 + 固定網紅探店」，合約期間3個月起訂。這不是一次性活動，而是每月持續製造話題與社群素材的訂閱系統。</p><p class="note">核心商業邏輯：店家每月固定訂閱，傑倪每月固定創造話題，形成穩定 recurring revenue。</p></div></section>
+
+<section class="page" id="p39"><div class="wrap"><span class="page-no">PAGE 39 / 44</span><div class="kicker">COST MODEL</div><h2>內部成本模型</h2><p>為了設計合理且可獲利的方案，先建立標準成本模型。此成本模型讓方案具備可控毛利，也能讓未來擴張時更容易複製。</p><table><tr><th>項目</th><th>成本</th></tr><tr><td>每月社群貼文與限動製作</td><td>NT$5,000</td></tr><tr><td>3,000粉以下新手網紅探店</td><td>NT$1,000/位</td></tr><tr><td>5,000粉以下微型網紅探店</td><td>NT$2,000/位</td></tr><tr><td>10,000粉以下成長型網紅探店</td><td>NT$5,000/位</td></tr><tr><td>實體小型輸出品設計</td><td>NT$2,000</td></tr><tr><td>實體大型互動輸出品設計</td><td>NT$5,000</td></tr><tr><td>專案管理與溝通成本</td><td>NT$2,000–5,000</td></tr></table></div></section>
+
+<section class="page" id="p40"><div class="wrap"><span class="page-no">PAGE 40 / 44</span><div class="kicker">OFFER DESIGN</div><h2>方案設計原則</h2><ol><li>每個方案都包含至少1位網紅探店，確保每月有第三方聲量。</li><li>所有方案皆有實體輸出設計，讓店面具備可拍、可分享的素材。</li><li>所有方案皆包含社群內容製作，避免只有活動沒有後續經營。</li><li>客戶可從低成本開始測試，降低第一次合作阻力。</li><li>成效好後再升級至更高方案，提高客戶終身價值。</li></ol></div></section>
+
+<section class="page" id="p41"><div class="wrap"><span class="page-no">PAGE 41 / 44</span><div class="kicker">STARTER VIRAL</div><h2>試水溫方案｜Starter Viral</h2><p class="num">NT$19,800 / 月</p><p>3個月起訂，總價NT$59,400。此方案適合初次嘗試流量場景行銷的小型餐飲店，核心目的是降低決策門檻並快速建立案例。</p><table><tr><th>服務內容</th><th>成本試算</th></tr><tr><td>每月1組桌邊互動輸出品（3–5款）</td><td>小型輸出設計 NT$2,000</td></tr><tr><td>4篇Threads文案＋4則IG限動文案</td><td>社群內容 NT$5,000</td></tr><tr><td>1位3,000粉以下新手網紅探店</td><td>網紅成本 NT$1,000</td></tr><tr><td>每月主題企劃與成效建議</td><td>專案管理 NT$2,000</td></tr><tr><th>總成本</th><th>NT$10,000</th></tr></table><p>月毛利約NT$9,800，毛利率約49%。</p></div></section>
+
+<section class="page" id="p42"><div class="wrap"><span class="page-no">PAGE 42 / 44</span><div class="kicker">GROWTH BUZZ</div><h2>成長方案｜Growth Buzz</h2><p class="num">NT$39,800 / 月</p><p>3個月起訂，總價NT$119,400。此方案是最有機會成為主力營收的方案，適合已有基礎客源、想提升社群聲量與來店誘因的店家。</p><table><tr><th>服務內容</th><th>成本試算</th></tr><tr><td>每月2組互動輸出品</td><td>輸出設計 NT$4,000</td></tr><tr><td>8篇貼文/Reels企劃、12則限動、12篇Threads</td><td>社群內容 NT$5,000</td></tr><tr><td>1位5,000粉以下微型網紅探店</td><td>網紅成本 NT$2,000</td></tr><tr><td>每月成效報告</td><td>專案管理 NT$3,000</td></tr><tr><th>總成本</th><th>NT$14,000</th></tr></table><p>月毛利約NT$25,800，毛利率約65%。</p></div></section>
+
+<section class="page" id="p43"><div class="wrap"><span class="page-no">PAGE 43 / 44</span><div class="kicker">VIRAL ENGINE / FLAGSHIP</div><h2>爆紅方案與品牌旗艦方案</h2><div class="grid2"><div class="card"><h3>Viral Engine｜NT$79,800/月</h3><p>內容包含完整主題互動場景、大型輸出裝置、全社群代操、1位10,000粉以下成長型網紅探店、廣告代操（不含廣告費）、Threads輿論操作與每週數據優化。</p><p>成本約NT$20,000，月毛利約NT$59,800，毛利率約75%。</p></div><div class="card"><h3>Flagship｜NT$150,000+/月</h3><p>適合連鎖品牌與多店經營，可依需求加入多位KOL、專業影片拍攝、多分店同步、大型媒體曝光與跨區域活動。</p><p>此方案可作為高客單價客戶池，提升公司整體營收天花板。</p></div></div></div></section>
+
+<section class="page" id="p44"><div class="wrap"><span class="page-no">PAGE 44 / 44</span><div class="kicker">REVENUE & CLOSING SCRIPT</div><h2>營收模型與銷售話術</h2><table><tr><th>方案</th><th>客戶數</th><th>月營收</th></tr><tr><td>Starter Viral</td><td>10家</td><td>NT$198,000</td></tr><tr><td>Growth Buzz</td><td>5家</td><td>NT$199,000</td></tr><tr><td>Viral Engine</td><td>3家</td><td>NT$239,400</td></tr><tr><th>總計</th><th>18家</th><th>NT$636,400/月</th></tr></table><p class="lead">銷售話術：我們不是單純幫你發文，而是讓你的餐點本身成為社群內容的一部分。客人用餐時自然拍照、發限動，搭配固定網紅探店與社群操作，讓你的店每個月都有新的話題。最低每月19,800元、三個月起，就能低風險測試這套流量系統是否適合你的品牌。</p><div class="quote">傑倪引流，<br><span class="gold">不是做行銷，是做成交。</span></div></div></section>
+
 </body>
 </html>
